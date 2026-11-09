@@ -46,7 +46,7 @@ public class PIDTune extends OpMode {
 
     @Override
     public void init(){
-        flywheel = hardwareMap.get(DcMotorEx.class, "flywheel");
+        flywheel = hardwareMap.get(DcMotorEx.class, "c");
         flywheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         flywheel.setDirection(DcMotorSimple.Direction.FORWARD);
 
